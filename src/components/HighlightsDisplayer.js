@@ -6,7 +6,7 @@ export default ({ weather: { data, err } }) => {
   return (
     <>
       {err ? (
-        <p>Something went wrong</p>
+        <p></p>
       ) : (
         data && (
           <div className="">

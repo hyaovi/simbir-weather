@@ -21,7 +21,7 @@ export default ({ forecast: { data, err } }) => {
   return (
     <>
       {err ? (
-        <p>Something went wrong</p>
+        <p></p>
       ) : (
         data &&
         data.list && (
