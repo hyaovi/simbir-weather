@@ -48,6 +48,7 @@ export default ({ forecast: { data, err } }) => {
                       <div className=" col-md-2 col-xl-2 p-1" key={index}>
                         <div className="card px-2 py-5 text-center d-flex flex-column  border-0">
                           <div className=" text-muted ">
+                            {console.log(item)}
                             <small className="heading">
                               {timeConverter(item.dt).dateString.substring(
                                 0,
@@ -57,8 +58,10 @@ export default ({ forecast: { data, err } }) => {
                             <br />
                             <span>{timeConverter(item.dt).time}</span>
                           </div>
-                          <h3 className="h3 heading my-4">18.65°</h3>
-                          <p className="h6 text-muted ">light rain</p>
+                          <h3 className="h3 heading my-4">{item.main.temp}</h3>
+                          <p className="h6 text-muted ">
+                            {item.weather[0].main}
+                          </p>
                         </div>
                       </div>
                     ))
