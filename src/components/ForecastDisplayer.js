@@ -48,7 +48,6 @@ export default ({ forecast: { data, err } }) => {
                       <div className=" col-md-2 col-xl-2 p-1" key={index}>
                         <div className="card px-2 py-5 text-center d-flex flex-column  border-0">
                           <div className=" text-muted ">
-                            {console.log(item)}
                             <small className="heading">
                               {timeConverter(item.dt).dateString.substring(
                                 0,
